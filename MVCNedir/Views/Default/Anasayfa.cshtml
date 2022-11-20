@@ -1,0 +1,27 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Anasayfa</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm())
+        {
+            <label>İsim  </label>
+            <input type="text" name="isim" />
+            <br />
+            <label>Soyisim</label>
+            <input type="text" name="soyisim" />
+            <br />
+            <input type="submit" value="Gönder" />
+        }
+    </div>
+</body>
+</html>

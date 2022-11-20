@@ -1,0 +1,37 @@
+﻿.form {
+    border: 1px solid silver;
+}
+    .form .form-title
+    {
+        background-color:#dddddd;
+        padding:20px;
+    }
+    .form .form-content {
+        padding: 10px;
+    }
+    .form label {
+        color: dimgray;
+        display: block;
+        margin: 10px 0;
+    }
+
+    .form input[type="text"] {
+        width: 90%;
+        padding: 7px;
+        border-radius: 3px;
+        border: 1px solid silver;
+    }
+    .form input[type="text"]:focus {
+        border: 1px solid teal;
+    }
+
+    .form input[type="submit"] {
+        background-color:teal;
+        color:white;
+        padding:7px 25px;
+        text-align:center;
+        font-weight:900;
+        border:1px solid #025151;
+        border-radius:5px;
+        margin-top:10px;
+    }

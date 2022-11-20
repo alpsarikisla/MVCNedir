@@ -1,0 +1,38 @@
+﻿@model IEnumerable<string>
+@{
+    Layout = null;
+    List<string> sehirler = Model.ToList();
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Listele</title>
+</head>
+<body>
+    <div>
+        <ul>
+            @foreach (var item in Model)
+            {
+                <li>@item</li>
+            }
+        </ul>
+        <table border="1" cellpadding="5" cellspacing="0">
+            <tr>
+                <th>ID</th>
+                <th>İsim</th>
+            </tr>
+            @for (int i = 0; i < sehirler.Count; i++)
+            {
+                <tr>
+                    <td>@i</td>
+                    <td>@sehirler[i]</td>
+                </tr>
+            }
+        </table>
+        
+    </div>
+</body>
+</html>

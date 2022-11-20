@@ -1,0 +1,35 @@
+﻿@model MVCNedir.Models.Categories
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Ekle</title>
+    <link href="~/Assets/css/pagedesign.css" rel="stylesheet" />
+    <link href="~/Assets/css/formdesign.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="form" style="width:500px;">
+        <div class="form-title">
+            <h2>Kategori Ekle</h2>
+        </div>
+        <div class="form-content">
+            @using (Html.BeginForm())
+            {
+                @Html.LabelFor(model => model.CategoryName);
+                @Html.EditorFor(model => model.CategoryName);
+                <br />
+                @Html.LabelFor(model => model.Description);
+                @Html.EditorFor(model => model.Description);
+                <br />
+                <input type="submit" value="Kategori Ekle" />
+            }
+        </div>
+       
+    </div>
+</body>
+</html>

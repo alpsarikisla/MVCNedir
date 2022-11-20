@@ -1,0 +1,44 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <p>Selam</p>
+        @{
+            int sayi = 45;
+        }
+        @if (sayi >= 30)
+        {
+            <p> Sayı 30'dan Büyük</p>
+        }
+        else
+        {
+            <p>Sayı 30'dan küçük</p>
+        }
+        <hr />
+        <ul>
+            @for (int i = 0; i < 50; i++)
+            {
+                if (i >= 30)
+                {
+                    <li style="color:red">eleman @i</li>
+                }
+                else
+                {
+                    <li>eleman @i</li>
+                }
+            }
+        </ul>
+       
+    </div>
+</body>
+</html>
